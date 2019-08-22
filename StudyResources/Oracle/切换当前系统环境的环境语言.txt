@@ -1,0 +1,12 @@
+﻿--查询当前系统环境语言
+select userenv('LANG') from dual;
+
+--变更系统环境语言
+--➤切换英文
+alter session set nls_language = 'AMERICAN';
+--➤切换中文
+alter session set nls_language = 'SIMPLIFIED CHINESE';
+
+--系统语言表
+select * from sys_languages;
+
